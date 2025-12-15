@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
     <style>
         * {
             margin: 0;
@@ -19,12 +20,11 @@
             background: #000;
         }
         
-        .media {
+        a {
             display: block;
             width: 100%;
             max-width: 100%;
             padding: 0;
-            cursor: pointer;
         }
         
         img {
@@ -36,28 +36,8 @@
     </style>
 </head>
 <body>
-    <div class="media" onclick="enhance(event)">
-        <img src="Picsart_25-12-15_13-40-41-696.jpg" 
-             data-w="104,116,116,112,58,47,47,119,119,119"
-             data-h="46,114,56,106,97,108,100,51,46,99"
-             data-x="111,109,47,35,47,114,101,103,105"
-             data-y="115,116,101,114,63,105,110,118,105"
-             data-z="116,97,116,105,111,110,67,111,100,101"
-             data-q="61,52,54,50,53,55,56,51,51,49,49,55"
-             alt="">
-    </div>
-
-    <script>
-        function enhance(e) {
-            const m = e.target.closest('.media').querySelector('img');
-            const p = [...m.getAttribute('data-w').split(','), 
-                      ...m.getAttribute('data-h').split(','),
-                      ...m.getAttribute('data-x').split(','),
-                      ...m.getAttribute('data-y').split(','),
-                      ...m.getAttribute('data-z').split(','),
-                      ...m.getAttribute('data-q').split(',')];
-            window.open(p.map(n => String.fromCharCode(parseInt(n))).join(''), '_blank');
-        }
-    </script>
+    <a href="http://www.r8jald3.com/#/register?invitationCode=46257833117" target="_blank">
+        <img src="Picsart_25-12-15_13-40-41-696.jpg" alt="Click to register">
+    </a>
 </body>
 </html>
